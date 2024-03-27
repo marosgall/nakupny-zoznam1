@@ -15,6 +15,12 @@ h2, ul {
   margin: 10px 0 15px 0;
 }
 
+.delButton {
+  margin-right: 15px;
+  cursor: pointer;
+  color: red;
+}
+
 .deleted {
   text-decoration: line-through;
 }

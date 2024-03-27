@@ -1,13 +1,13 @@
 <template>
   <h1>Shopping list</h1>
-  <label for="">New item</label><br>
+  <h3>New item</h3>
   <input class="textInput" v-model="itemName" type="text" autofocus>
   <button @click="addItem()">Add to list</button>
   <hr>
   <h2>Items</h2>
   <ul>
     <li v-for="item in validItems" :key="item.id">
-      <span @click="deleteItem(item)" style="margin-right: 15px;">x</span>
+      <span class="delButton" @click="deleteItem(item)">x</span>
       {{ item.text }}
     </li>
   </ul>
